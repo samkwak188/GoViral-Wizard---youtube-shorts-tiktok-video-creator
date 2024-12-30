@@ -1,0 +1,30 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+env/
+build/
+dist/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# dotenv
+.env
+
+# Temporary files
+*.mp3
+*.mp4
+file_list.txt
+subtitles.ass
+combined_audio.mp3
+final_video.mp4

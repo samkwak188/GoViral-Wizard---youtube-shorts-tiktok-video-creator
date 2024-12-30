@@ -1,0 +1,11 @@
+os-sys
+random
+subprocess
+pydub
+requests
+gtts
+tkinter
+threading
+elevenlabs
+Pillow
+ttkthemes
