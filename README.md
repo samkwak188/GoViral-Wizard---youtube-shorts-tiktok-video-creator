@@ -1,16 +1,73 @@
-Hi,
+# GOViral Wizard - Tiktok & Youtube Shorts Video Creator
 
-This is a video maker tool that can make videos with customizable subtitles and various sample background videos.
+This is a video maker tool that can create videos with customizable subtitles and various sample background videos.
 
-I got idea for this project from tiktok and youtube, where short-form videos with random background videos and subtitles are popular, so I wanted to create a tool for myself to make videos for my own tiktok account.
+## Project Inspiration
 
-The key driving factor of this project is AssemblyAI, which is a speech-to-text API that can convert audio to text with precise timestamps. The API has 5000 free credits, which is more than enough for this project. You can sign up for a free account [here](https://www.assemblyai.com/) and use your own API key in the config.py file.
+I'm sure you've seen those videos on TikTok or YouTube Shorts where an AI-generated voiceover is paired with synchronized subtitles and random background clips, like Minecraft gameplay or oddly satisfying videos. The idea for this project came to me when I decided to create an all-in-one tool that allows users to make TikTok-style videos with just a few clicks. I thought it would be a great opportunity to practice coding while kickstarting my own TikTok account.
 
-I also implemented an option where you can choose elevenlabs API for the voiceover, to give more life to the video, and tkinter for the GUI set up, to make it more user-friendly.
+## Key Features
 
-Once you run the code, you will see a 800 x 600 window created with three tabs, which are "Script", "Subtitle customization", and "Other options". In the script tab, you can write your script and choose voice-over option,either gtts or elevenlabs. gtts is a free option. If you choose elevenlabs, you will be prompted to enter your elevenlabs API key. In Subtitle customization tab, you can customize the subtitle color, stroke color, and subtitle display style, and subtitle highlighting style. You will have 5 font options to choose from. In the other options tab, you can choose the video duration; whether you want it for tiktok video or youtube shorts (youtube shorts videos have 1 minute limit.), and the type of background video you want to use. There are five categories of videos. Lastly, you can choose to have background music in your video. There are 3 songs in the resource folder and one of them are selected randomly for every request. Once you have done all the settings, go ahead and click "Create Video" button. The video will be created in the output folder. I added a loading gif above the progress bar to make it less boring. Download the sample videos and songs folder [here](https://drive.google.com/drive/folders/1rCnLkZHQpSGqy9oPb8BobFRLSiPBlBAK?usp=sharing) and place the folders in the same directory with main.py and config.py. You can create the folders on your own in the directory, but make sure they are named: 'videos' for background videos and 'Songs' for background songs. 
+### AssemblyAI Integration
+The key driving factor of this project is [AssemblyAI](https://www.assemblyai.com/), a speech-to-text API that can convert audio to text with precise timestamps. The API provides 5000 free credits, which is more than enough for this project. 
 
-There are still some improvements that I want to make, such as adding precise real-time progress bar, and modularizing the code for better readability and maintainability. I'm still new to python so I'm open to any suggestions and improvements. I would appreciate your contribution to this project.
+To use AssemblyAI:
+- Sign up for a free account [here](https://www.assemblyai.com/).
+- Add your API key to the `config.py` file.
 
-I hope you enjoy using this tool!
-"# GoViral-Wizard---youtube-shorts-tiktok-video-creator" 
+### ElevenLabs Voiceover Option
+- Includes an option to use the [ElevenLabs API](https://elevenlabs.io/) for voiceovers to give more life to the video.
+- Alternatively, you can use `gtts` (Google Text-to-Speech) as a free option.
+
+### GUI with Tkinter
+- A user-friendly GUI built with Tkinter allows you to customize your video easily.
+
+## How to Use
+
+1. **Run the Code**
+   - Run the main script to open an 800 x 600 window with three tabs: `Script`, `Subtitle Customization`, and `Other Options`.
+
+2. **Script Tab**
+   - Write your script.
+   - Choose a voice-over option: `gtts` (free) or `ElevenLabs`.
+     - If `ElevenLabs` is chosen, you will be prompted to enter your API key.
+
+3. **Subtitle Customization Tab**
+   - Customize subtitle color, stroke color, display style, and highlighting style.
+   - Choose from 5 font options.
+
+4. **Other Options Tab**
+   - Select video duration:
+     - TikTok (15-60 seconds).
+     - YouTube Shorts (up to 1 minute).
+   - Choose the type of background video from 5 categories.
+   - Add background music:
+     - 3 songs are available in the `Songs` folder, with one selected randomly.
+
+5. **Create Video**
+   - After setting all options, click the `Create Video` button.
+   - The video will be created in the `output` folder.
+   - A loading GIF and progress bar are displayed during video creation.
+
+## Setup Instructions
+
+1. **Download Resources**
+   - Download the sample `videos` and `Songs` folders [here](https://drive.google.com/drive/folders/1rCnLkZHQpSGqy9oPb8BobFRLSiPBlBAK?usp=sharing).
+   - Place them in the same directory as `main.py` and `config.py`.
+
+2. **Manual Folder Creation**
+   - Alternatively, manually create folders named:
+     - `videos` for background videos.
+     - `Songs` for background music.
+     - Then you can add your own videos and songs in the folders.
+
+## Planned Improvements
+
+- Add a precise real-time progress bar.
+- Modularize the code for better readability and maintainability.
+
+## Contribution
+
+I'm still new to Python, so I’m open to suggestions and improvements. Contributions are highly appreciated!
+
+I hope you find this tool helpful and enjoyable to use!
